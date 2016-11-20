@@ -1,0 +1,46 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700i&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+
+      <div class="top-bar" id="example-menu">
+        <div class="top-bar-left">
+          <a href="/">Экскурсии из Паттайи</a>
+        </div>
+        <div class="top-bar-right">
+          <ul class="vertical medium-horizontal menu">
+            <li>1 RUB = 0.543 THB</li>
+            <li>1 USD = 34.82 THB</li>
+            <li>1 EUR = 339.30 THB</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{> body}}
+
+    <footer class="text-right top-bar">
+        <div class="top-bar-right">
+          <span>2016</span>
+          <a href="https://vk.com/id315243866">Юлия Иванова</a>
+        </div>
+    </footer>
+
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
+</html>
